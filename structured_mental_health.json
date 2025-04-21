@@ -1,0 +1,822 @@
+{
+    "intents": [
+        {
+            "tag": "definition",
+            "patterns": [
+                "What does it mean to have a mental illness?"
+            ],
+            "responses": [
+                "Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "affected_population",
+            "patterns": [
+                "Who does mental illness affect?"
+            ],
+            "responses": [
+                "Mental illness can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "symptoms",
+            "patterns": [
+                "What are some of the warning signs of mental illness?"
+            ],
+            "responses": [
+                "Warning signs may include excessive sadness, mood swings, withdrawal from social activities, and changes in eating or sleeping habits."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "helping_others",
+            "patterns": [
+                "What should I do if I know someone who appears to have the symptoms of a mental disorder?"
+            ],
+            "responses": [
+                "Encourage them to seek professional help, offer emotional support, and be patient and understanding."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "positive_negative_symptoms",
+            "patterns": [
+                "What are positive and negative symptoms?"
+            ],
+            "responses": [
+                "Positive symptoms include hallucinations and delusions, while negative symptoms include lack of motivation, withdrawal, and reduced emotional expression."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "recovery",
+            "patterns": [
+                "Can people with mental illness recover?"
+            ],
+            "responses": [
+                "When healing from mental illness, early identification and treatment are of vital importance. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "finding_professional",
+            "patterns": [
+                "How can I find a mental health professional for myself or my child?"
+            ],
+            "responses": [
+                "Consult your doctor, check online directories, and verify credentials."
+            ]
+        },
+        {
+            "tag": "treatment_options",
+            "patterns": [
+                "What treatment options are available?"
+            ],
+            "responses": [
+                "Different treatment options are available for individuals with mental illness."
+            ]
+        },
+        {
+            "tag": "treatment_involvement",
+            "patterns": [
+                "If I become involved in treatment, what do I need to know?"
+            ],
+            "responses": [
+                "Stay informed, communicate openly with your doctor, and actively participate in the process."
+            ]
+        },
+        {
+            "tag": "difference_mental_health_professionals",
+            "patterns": [
+                "What is the difference between mental health professionals?"
+            ],
+            "responses": [
+                "Mental health professionals differ in their training and services. Psychiatrists are medical doctors who can prescribe medication, while psychologists provide therapy and assessments. Counselors and therapists offer talk therapy, and social workers provide support and resources. Choosing the right professional depends on your needs."
+            ]
+        },
+        {
+            "tag": "medication_information",
+            "patterns": [
+                "What should I know before starting a new medication?"
+            ],
+            "responses": [
+                "The best source of information regarding medications is the physician prescribing them."
+            ]
+        },
+        {
+            "tag": "medication_effectiveness",
+            "patterns": [
+                "If I feel better after taking medication, does this mean I am 'cured' and can stop taking it?"
+            ],
+            "responses": [
+                "Mental health conditions are often treated with medication, therapy, or a combination of the two."
+            ]
+        },
+        {
+            "tag": "therapy_options",
+            "patterns": [
+                "Where can I go to find therapy?"
+            ],
+            "responses": [
+                "Several different types of treatment and therapy can help."
+            ]
+        },
+        {
+            "tag": "mental_health_treatment",
+            "patterns": [
+                "Where can I learn about types of mental health treatment?"
+            ],
+            "responses": [
+                "Several different types of treatment and therapy can help."
+            ]
+        },
+        {
+            "tag": "difference_mental_health_professionals",
+            "patterns": [
+                "What are the different types of mental health professionals?"
+            ],
+            "responses": [
+                "There are many types of mental health professionals. The variety of providers and their services may be confusing. Each has various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."
+            ]
+        },
+        {
+            "tag": "support_groups",
+            "patterns": [
+                "Where can I go to find a support group?"
+            ],
+            "responses": [
+                "Many people find peer support a helpful tool that can aid in their recovery."
+            ]
+        },
+        {
+            "tag": "inpatient_care",
+            "patterns": [
+                "Where can I go to find inpatient care?"
+            ],
+            "responses": [
+                "Inpatient care can help people stabilize on new medications, adjust to new symptoms, or get the help they need."
+            ]
+        },
+        {
+            "tag": "local_services",
+            "patterns": [
+                "Where can I go to find other local services?"
+            ],
+            "responses": [
+                "It is important to continue involvement in the treatment process as much as possible."
+            ]
+        },
+        {
+            "tag": "clinical_trials",
+            "patterns": [
+                "Where can I learn more information about clinical trials?"
+            ],
+            "responses": [
+                "Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment."
+            ]
+        },
+        {
+            "tag": "psychiatric_advance_directive",
+            "patterns": [
+                "Where can I learn more information about creating a Psychiatric Advance Directive?"
+            ],
+            "responses": [
+                "Create a plan for switching to a different treatment that will be a better fit."
+            ]
+        },
+        {
+            "tag": "mental_health_basics",
+            "patterns": [
+                "What is mental health?"
+            ],
+            "responses": [
+                "Mental health refers to a person’s emotional, psychological, and social well-being. It affects how individuals think, feel, and behave in daily life."
+            ]
+        },
+        {
+            "tag": "mental_health_prevention",
+            "patterns": [
+                "Can you prevent mental health problems?"
+            ],
+            "responses": [
+                "While not all mental health problems can be prevented, maintaining a healthy lifestyle, managing stress, and seeking support early can reduce risks."
+            ]
+        },
+        {
+            "tag": "mental_health_cures",
+            "patterns": [
+                "Are there cures for mental health problems?"
+            ],
+            "responses": [
+                "Mental health conditions can often be managed effectively with therapy, medication, and lifestyle changes, though a complete 'cure' may vary by condition."
+            ]
+        },
+        {
+            "tag": "causes_mental_health_problems",
+            "patterns": [
+                "What causes mental health problems?"
+            ],
+            "responses": [
+                "Mental health problems can arise from genetic factors, life experiences, trauma, and biological imbalances."
+            ]
+        },
+        {
+            "tag": "worried_about_mental_health",
+            "patterns": [
+                "What do I do if I’m worried about my mental health?"
+            ],
+            "responses": [
+                "Seeking professional help, talking to someone you trust, and practicing self-care strategies can be good first steps."
+            ]
+        },
+        {
+            "tag": "recognizing_mental_illness",
+            "patterns": [
+                "How do I know if I’m unwell?"
+            ],
+            "responses": [
+                "Signs of mental health issues include changes in mood, energy levels, sleep patterns, and difficulty coping with daily life."
+            ]
+        },
+        {
+            "tag": "dealing_with_advice",
+            "patterns": [
+                "How do I deal with someone telling me what to do?"
+            ],
+            "responses": [
+                "Setting boundaries and communicating your needs clearly can help when handling unsolicited advice."
+            ]
+        },
+        {
+            "tag": "importance_of_information",
+            "patterns": [
+                "Why do I need to keep informed?"
+            ],
+            "responses": [
+                "Staying informed about mental health helps you make better decisions and advocate for yourself and others."
+            ]
+        },
+        {
+            "tag": "evaluating_health_information",
+            "patterns": [
+                "How can I tell if health information is good or bad?"
+            ],
+            "responses": [
+                "Reliable health information comes from reputable sources like medical professionals, research studies, and government websites."
+            ]
+        },
+        {
+            "tag": "referral_information",
+            "patterns": [
+                "What is a referral?"
+            ],
+            "responses": [
+                "A referral is a recommendation from a healthcare provider to see a specialist or receive a specific treatment."
+            ]
+        },
+        {
+            "tag": "psychiatrist_vs_psychologist",
+            "patterns": [
+                "What's the difference between a psychiatrist and a registered psychologist?"
+            ],
+            "responses": [
+                "A psychiatrist is a medical doctor who can prescribe medication, while a psychologist provides therapy and psychological assessments."
+            ]
+        },
+        {
+            "tag": "psychotherapy_vs_counselling",
+            "patterns": [
+                "What's the difference between psychotherapy and counselling?"
+            ],
+            "responses": [
+                "Psychotherapy is often longer-term and addresses deeper emotional and psychological issues, while counselling is usually short-term and focused on specific challenges."
+            ]
+        },
+        {
+            "tag": "cbt_vs_dbt",
+            "patterns": [
+                "What's the difference between CBT and DBT?"
+            ],
+            "responses": [
+                "Cognitive Behavioral Therapy (CBT) focuses on changing negative thought patterns, while Dialectical Behavior Therapy (DBT) emphasizes emotional regulation and mindfulness."
+            ]
+        },
+        {
+            "tag": "antidepressants_difference",
+            "patterns": [
+                "What's the difference between antidepressants?"
+            ],
+            "responses": [
+                "Antidepressants work in different ways and belong to various classes, such as SSRIs, SNRIs, and MAOIs, each affecting brain chemistry differently."
+            ]
+        },
+        {
+            "tag": "diagnosis_doubt",
+            "patterns": [
+                "I received a diagnosis but I don’t think it’s right. What can I do?"
+            ],
+            "responses": [
+                "If you doubt your diagnosis, consider seeking a second opinion from another healthcare professional."
+            ]
+        },
+        {
+            "tag": "medication_not_working",
+            "patterns": [
+                "I was prescribed an antidepressant or other psychiatric medication but I don’t think it’s working. What can I do?"
+            ],
+            "responses": [
+                "Talk to your doctor about your concerns; adjustments to your medication or alternative treatments may be necessary."
+            ]
+        },
+        {
+            "tag": "brain_injury_information",
+            "patterns": [
+                "Someone I care about has a brain injury. Where can I find more information?"
+            ],
+            "responses": [
+                "You can find reliable information on brain injuries through medical websites, support groups, and healthcare providers."
+            ]
+        },
+        {
+            "tag": "parent_with_mental_illness",
+            "patterns": [
+                "I’m a young person and one of my parents has a mental illness. What can I do?"
+            ],
+            "responses": [
+                "It can be helpful to talk to a trusted adult, counselor, or support group for guidance and emotional support."
+            ]
+        },
+        {
+            "tag": "cannabis_risks",
+            "patterns": [
+                "Cannabis is legally allowed to 19+ but there are doctor groups saying it’s potentially harmful to age 25. Any use or certain use? What’s myth and what’s fact? If I’m a parent, what should I tell my young adult?"
+            ],
+            "responses": [
+                "Research suggests that early cannabis use may impact brain development. It’s best to have an open conversation with your young adult about risks and responsible choices."
+            ]
+        },
+        {
+            "tag": "mental_health_vs_illness",
+            "patterns": [
+                "What's the difference between mental health and mental illness?"
+            ],
+            "responses": [
+                "Mental health refers to overall well-being, while mental illness involves diagnosed conditions that affect thoughts, emotions, and behavior."
+            ]
+        },
+        {
+            "tag": "depression_information",
+            "patterns": [
+                "Where can I find more information about depression?"
+            ],
+            "responses": [
+                "You can find reliable information about depression through medical sources, support groups, and mental health professionals."
+            ]
+        },
+        {
+            "tag": "anxiety_vs_anxiety_disorder",
+            "patterns": [
+                "What’s the difference between anxiety and an anxiety disorder?"
+            ],
+            "responses": [
+                "Anxiety is a normal stress response, while an anxiety disorder involves excessive worry and interference with daily life."
+            ]
+        },
+        {
+            "tag": "anxiety_vs_stress",
+            "patterns": [
+                "What's the difference between anxiety and stress?"
+            ],
+            "responses": [
+                "Stress is a response to external pressures, while anxiety can persist even without an immediate stressor."
+            ]
+        },
+        {
+            "tag": "sadness_vs_depression",
+            "patterns": [
+                "What's the difference between sadness and depression?"
+            ],
+            "responses": [
+                "Sadness is a temporary emotion, while depression is a long-term mental health condition affecting daily life."
+            ]
+        },
+        {
+            "tag": "dysthymia_definition",
+            "patterns": [
+                "What is dysthymia or persistent depressive disorder?"
+            ],
+            "responses": [
+                "Dysthymia, or persistent depressive disorder, is a long-term form of depression with milder but chronic symptoms."
+            ]
+        },
+        {
+            "tag": "cyclothymic_disorder",
+            "patterns": [
+                "What is cyclothymic disorder?"
+            ],
+            "responses": [
+                "Cyclothymic disorder is a mood disorder with fluctuating low-level depression and hypomania symptoms."
+            ]
+        },
+        {
+            "tag": "rapid_cycling",
+            "patterns": [
+                "What does rapid cycling mean?"
+            ],
+            "responses": [
+                "Rapid cycling refers to experiencing four or more mood episodes in a year in bipolar disorder."
+            ]
+        },
+        {
+            "tag": "medication_information",
+            "patterns": [
+                "What should I know before starting a new medication?"
+            ],
+            "responses": [
+                "The best source of information regarding medications is the physician prescribing them."
+            ]
+        },
+        {
+            "tag": "medication_effectiveness",
+            "patterns": [
+                "If I feel better after taking medication, does this mean I am 'cured' and can stop taking it?"
+            ],
+            "responses": [
+                "Mental health conditions are often treated with medication, therapy, or a combination of the two."
+            ]
+        },
+        {
+            "tag": "therapy_options",
+            "patterns": [
+                "Where can I go to find therapy?"
+            ],
+            "responses": [
+                "Several different types of treatment and therapy can help."
+            ]
+        },
+        {
+            "tag": "mental_health_treatment",
+            "patterns": [
+                "Where can I learn about types of mental health treatment?"
+            ],
+            "responses": [
+                "Several different types of treatment and therapy can help."
+            ]
+        },
+        {
+            "tag": "difference_mental_health_professionals",
+            "patterns": [
+                "What are the different types of mental health professionals?"
+            ],
+            "responses": [
+                "There are many types of mental health professionals. The variety of providers and their services may be confusing. Each has various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."
+            ]
+        },
+        {
+            "tag": "difference_did_schizophrenia",
+            "patterns": [
+                "What’s the difference between dissociative identity disorder (multiple personality disorder) and schizophrenia?"
+            ],
+            "responses": [
+                "Dissociative identity disorder (DID) involves multiple distinct identities or personalities, while schizophrenia is a severe mental disorder affecting thought processes, emotions, and behaviors. They are distinct conditions with different treatments."
+            ]
+        },
+        {
+            "tag": "difference_psychosis_schizophrenia",
+            "patterns": [
+                "What's the difference between psychosis and schizophrenia?"
+            ],
+            "responses": [
+                "Psychosis is a symptom that includes delusions or hallucinations, whereas schizophrenia is a chronic mental health disorder that can include psychosis among other symptoms."
+            ]
+        },
+        {
+            "tag": "prodrome_explanation",
+            "patterns": [
+                "What is a prodrome?"
+            ],
+            "responses": [
+                "A prodrome is an early set of symptoms indicating the onset of a disease, such as early warning signs of schizophrenia or migraines."
+            ]
+        },
+        {
+            "tag": "adult_adhd_next_steps",
+            "patterns": [
+                "I’m an adult and I think I might have ADHD. What can I do next?"
+            ],
+            "responses": [
+                "If you think you might have ADHD, consider speaking with a healthcare professional for assessment, exploring treatment options like therapy or medication, and implementing strategies to manage symptoms."
+            ]
+        },
+        {
+            "tag": "difference_substance_use_addiction",
+            "patterns": [
+                "What’s the difference between substance use and addiction?"
+            ],
+            "responses": [
+                "Substance use refers to consuming a substance occasionally, while addiction is a compulsive need for a substance, leading to harmful consequences."
+            ]
+        },
+        {
+            "tag": "alcohol_consumption_limit",
+            "patterns": [
+                "How do I know if I'm drinking too much?"
+            ],
+            "responses": [
+                "Drinking too much can depend on frequency, quantity, and its impact on your health and daily life. Guidelines suggest moderation, and signs of excessive drinking include dependency, withdrawal symptoms, and negative consequences."
+            ]
+        },
+        {
+            "tag": "cannabis_legalization_danger",
+            "patterns": [
+                "If cannabis is dangerous, why are we legalizing it?"
+            ],
+            "responses": [
+                "Legalization of cannabis aims to regulate its use, ensure safety, reduce illegal distribution, and generate economic benefits. However, risks still exist, and responsible usage is essential."
+            ]
+        },
+        {
+            "tag": "convincing_kids_not_to_use_drugs",
+            "patterns": [
+                "How can I convince my kids not to use drugs?"
+            ],
+            "responses": [
+                "Open communication, setting a positive example, educating them about risks, and fostering strong relationships can help deter children from drug use."
+            ]
+        },
+        {
+            "tag": "cbd_oil_legal_status",
+            "patterns": [
+                "What is the legal status (and evidence) of CBD oil?"
+            ],
+            "responses": [
+                "The legal status of CBD oil varies by location. Research suggests potential benefits for pain, anxiety, and epilepsy, but more studies are needed. Check local laws before purchasing."
+            ]
+        },
+        {
+            "tag": "evidence_on_vaping",
+            "patterns": [
+                "What is the evidence on vaping?"
+            ],
+            "responses": [
+                "Vaping is considered less harmful than smoking but still carries risks, particularly for youth and non-smokers. Studies suggest links to lung injury and nicotine addiction."
+            ]
+        },
+        {
+            "tag": "help_resources",
+            "patterns": [
+                "Where else can I get help?"
+            ],
+            "responses": [
+                "There are many resources available, including mental health organizations, hotlines, and online support groups that can provide assistance."
+            ]
+        },
+        {
+            "tag": "medication_financial_assistance",
+            "patterns": [
+                "How can I get help paying for my medication?"
+            ],
+            "responses": [
+                "Many pharmaceutical companies, non-profit organizations, and government programs offer financial assistance for medications."
+            ]
+        },
+        {
+            "tag": "ineffective_support",
+            "patterns": [
+                "What do I do if the support doesn’t help?"
+            ],
+            "responses": [
+                "If current support isn’t working, consider seeking a different therapist, support group, or treatment approach."
+            ]
+        },
+        {
+            "tag": "worried_about_someone",
+            "patterns": [
+                "What should I do if I’m worried about a friend or relative?"
+            ],
+            "responses": [
+                "Express your concern, offer to listen without judgment, and encourage them to seek professional help if needed."
+            ]
+        },
+        {
+            "tag": "older_adults_mental_health",
+            "patterns": [
+                "Where can older adults find help for mental health concerns?"
+            ],
+            "responses": [
+                "Older adults can seek help from geriatric mental health specialists, community support programs, and helplines for seniors."
+            ]
+        },
+        {
+            "tag": "self_help_depression",
+            "patterns": [
+                "Where can I find self-help materials for depression?"
+            ],
+            "responses": [
+                "Self-help materials for depression can be found online, in bookstores, or through mental health organizations."
+            ]
+        },
+        {
+            "tag": "self_help_anxiety",
+            "patterns": [
+                "Where can I find self-help materials for anxiety?"
+            ],
+            "responses": [
+                "There are numerous self-help books, guided exercises, and online resources available to help manage anxiety."
+            ]
+        },
+        {
+            "tag": "coping_with_physical_health",
+            "patterns": [
+                "I’m having a hard time coping with a physical health problem. Where can I find help?"
+            ],
+            "responses": [
+                "Counselors, support groups, and chronic illness organizations can offer emotional and practical support."
+            ]
+        },
+        {
+            "tag": "substance_use_help",
+            "patterns": [
+                "When is substance use a problem? Where can I go for help?"
+            ],
+            "responses": [
+                "Substance use is a problem when it affects your daily life. Rehab centers, hotlines, and counseling services can provide help."
+            ]
+        },
+        {
+            "tag": "prescription_financial_assistance",
+            "patterns": [
+                "Can I get help paying for prescription medications?"
+            ],
+            "responses": [
+                "Yes, financial assistance is available through pharmaceutical programs, insurance, and non-profits."
+            ]
+        },
+        {
+            "tag": "adult_mental_health_concerns",
+            "patterns": [
+                "An adult in my life seems ill and won’t find help. What can I do?"
+            ],
+            "responses": [
+                "Encourage them to seek help, offer to assist in finding resources, and be patient and supportive."
+            ]
+        },
+        {
+            "tag": "child_teen_mental_health",
+            "patterns": [
+                "I’m worried about my child or teenager. Where can I find help?"
+            ],
+            "responses": [
+                "School counselors, pediatricians, and mental health professionals specializing in youth can provide support."
+            ]
+        },
+        {
+            "tag": "helping_with_depression",
+            "patterns": [
+                "Someone I love has been diagnosed with depression. How can I help?"
+            ],
+            "responses": [
+                "Offer emotional support, encourage treatment, and educate yourself about depression."
+            ]
+        },
+        {
+            "tag": "helping_with_schizophrenia",
+            "patterns": [
+                "Someone I love has been diagnosed with schizophrenia. How can I help?"
+            ],
+            "responses": [
+                "Support them in following their treatment plan, learn about schizophrenia, and be patient and understanding."
+            ]
+        },
+        {
+            "tag": "suicide_prevention",
+            "patterns": [
+                "I have thoughts of suicide, or someone I care about is talking about suicide. What should I do?"
+            ],
+            "responses": [
+                "Seek immediate help by calling a crisis helpline, talking to a trusted person, or visiting a mental health professional."
+            ]
+        },
+        {
+            "tag": "borderline_personality_disorder",
+            "patterns": [
+                "Where can I find information and help for borderline personality disorder?"
+            ],
+            "responses": [
+                "Mental health professionals, support groups, and online resources provide education and treatment options for BPD."
+            ]
+        },
+        {
+            "tag": "alcohol_drug_use_help",
+            "patterns": [
+                "How can I find help for an alcohol or drug use problem?"
+            ],
+            "responses": [
+                "Rehabilitation programs, therapy, and support groups like AA or NA can provide assistance."
+            ]
+        },
+        {
+            "tag": "reduce_stigma",
+            "patterns": [
+                "How can I help reduce the stigma around mental health?"
+            ],
+            "responses": [
+                "You can help reduce stigma by talking openly about mental health, educating yourself and others, showing compassion, and supporting policies that promote mental well-being."
+            ]
+        },
+        {
+            "tag": "mental_vs_physical_health",
+            "patterns": [
+                "Why is mental health as important as physical health?"
+            ],
+            "responses": [
+                "Mental health is just as important as physical health because it affects overall well-being, daily functioning, and quality of life. Mental and physical health are closely linked."
+            ]
+        },
+        {
+            "tag": "talk_to_skeptic",
+            "patterns": [
+                "How can I talk to someone who doesn’t believe in mental health issues?"
+            ],
+            "responses": [
+                "Approach the conversation with empathy, share scientific facts, personal experiences, and encourage open dialogue to help change misconceptions."
+            ]
+        },
+        {
+            "tag": "anxiety_children",
+            "patterns": [
+                "What are the signs of anxiety in children?"
+            ],
+            "responses": [
+                "Signs of anxiety in children may include excessive worry, irritability, trouble sleeping, stomach aches, and avoidance of certain situations."
+            ]
+        },
+        {
+            "tag": "talk_to_child",
+            "patterns": [
+                "How do I talk to my child about mental health?"
+            ],
+            "responses": [
+                "Use age-appropriate language, encourage open communication, reassure them that feelings are normal, and provide support and resources."
+            ]
+        },
+        {
+            "tag": "teen_depression",
+            "patterns": [
+                "What should I do if my teenager is showing signs of depression?"
+            ],
+            "responses": [
+                "Encourage open dialogue, seek professional help, provide emotional support, and monitor their behavior for any serious concerns."
+            ]
+        },
+        {
+            "tag": "work_stress",
+            "patterns": [
+                "How can I manage stress at work?"
+            ],
+            "responses": [
+                "Prioritize tasks, take breaks, practice mindfulness, and communicate concerns with your employer if needed."
+            ]
+        },
+        {
+            "tag": "student_resources",
+            "patterns": [
+                "What mental health resources are available for students?"
+            ],
+            "responses": [
+                "Many schools offer counseling services, peer support groups, mental health apps, and crisis hotlines for students."
+            ]
+        },
+        {
+            "tag": "talk_to_employer",
+            "patterns": [
+                "How do I talk to my employer about my mental health?"
+            ],
+            "responses": [
+                "Be honest, explain how your condition affects work, and discuss accommodations that can help improve your performance and well-being."
+            ]
+        },
+        {
+            "tag": "exercise_mental_health",
+            "patterns": [
+                "How does exercise affect mental health?"
+            ],
+            "responses": [
+                "Exercise can boost mood, reduce stress, improve sleep, and help alleviate symptoms of anxiety and depression."
+            ]
+        },
+        {
+            "tag": "diet_mental_health",
+            "patterns": [
+                "Can diet impact my mental health?"
+            ],
+            "responses": [
+                "Yes, a healthy diet with balanced nutrients can support brain function, stabilize mood, and improve overall mental well-being."
+            ]
+        }   
+    ]
+}

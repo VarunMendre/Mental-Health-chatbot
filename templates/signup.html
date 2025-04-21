@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - VAST</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4b0082, #1e3c72, #2a5298);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        .main-container {
+            width: 80%;
+            max-width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .image-container {
+            width: 50%;
+            max-height: 500px;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .image-container img {
+            max-width: 70%;
+            max-height: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .image-container h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .image-container p {
+            font-size: 1.1em;
+            color: #ddd;
+            text-align: left;
+        }
+        .signup-container {
+            width: 40%;
+            max-height: 450px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .login-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .login-link:hover {
+            background: #5a6268;
+        }
+        @media (max-width: 900px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .image-container, .signup-container {
+                width: 90%;
+                max-height: unset;
+                text-align: center;
+            }
+            .image-container h1, .image-container p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1739870660/user_uploads/GZvxngkCPDrLstn/image.jpg" alt="Chat Bot Image">
+            <h1>VAST</h1>
+            <p>"Your Safe Space to Talk & Heal 💙"</p>
+        </div>
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="/login" class="login-link">Already have an account? Login</a>
+        </div>
+    </div>
+</body>
+</html>
