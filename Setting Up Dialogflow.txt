@@ -1,85 +1,83 @@
-## 🧠 Setting Up Dialogflow & Importing Intents
+## 💡 Alternative Guide: Setting Up Dialogflow & Training Intents
 
-### Step 1: Create a Dialogflow Account
-1. Visit [Dialogflow Console](https://dialogflow.cloud.google.com/)
-2. Sign in with your Google account.
-3. Agree to terms and create a Google Cloud project if prompted.
+This is a streamlined guide for quickly setting up Dialogflow and training your chatbot with custom intents.
 
 ---
 
-### Step 2: Create a New Agent
-1. In the Dialogflow Console, click the **gear icon ⚙️** (next to your agent name).
-2. If you don’t have an agent yet:
-   - Click **Create new agent**.
-   - Enter your **Agent Name**, **Default Language**, and **Default Time Zone**.
-   - Choose your **Google Cloud Project** (or create a new one).
-   - Click **Create**.
+### ✅ Prerequisites
+- A Google account
+- Python 3.7+
+- `pip` (Python package installer)
+- Google Cloud CLI (optional but helpful)
 
 ---
 
-### Step 3: Enable Dialogflow API & Download Credentials
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Select your project (created during the agent setup).
-3. In the left menu, go to **APIs & Services > Library**.
-4. Search for **Dialogflow API**, and **Enable** it.
-5. Go to **APIs & Services > Credentials**.
-6. Click **Create Credentials > Service Account Key**:
-   - Choose **Service Account**
-   - Select **JSON** as the key type
-7. Click **Create**, and a `.json` file will be downloaded.  
-   _Save it in your project root directory and update the path in your code accordingly._
+### ⚖️ Step 1: Create a Google Cloud Project & Enable Dialogflow API
+1. Visit [https://console.cloud.google.com/](https://console.cloud.google.com/)
+2. Click **New Project** and give it a name (e.g., `mental-health-bot`)
+3. After creation, go to **APIs & Services > Library**
+4. Search for **Dialogflow API** and click **Enable**
 
 ---
 
-### Step 4: Set Environment Variable (Optional but Recommended)
+### 🔐 Step 2: Create Service Account & Download Credentials
+1. In Google Cloud Console, go to **IAM & Admin > Service Accounts**
+2. Click **Create Service Account**
+3. Name it (e.g., `dialogflow-access`) and assign role: `Dialogflow API Client`
+4. After creation, click **Add Key > Create new key**
+   - Choose `JSON`, download and save the file in your project folder
 
-Set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to point to your key:
+---
+
+### ⚙️ Step 3: Configure Your Environment
+1. Store the credentials path in an environment variable:
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS="path_to_your_file.json"
+export GOOGLE_APPLICATION_CREDENTIALS="./your_service_account_file.json"
 ```
 
----
-
-### Step 5: Import and Train Intents with Python Script
-
-If you have a file like `intents.json`, the app already includes a function:
-
+2. Alternatively, hardcode the path (not recommended for production):
 ```python
-import_intents_from_json('vast-ytfa-36b7391b4430.json')
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your_service_account_file.json"
 ```
 
-To run it, simply do this in your terminal:
+---
 
-```bash
-python app.py
-```
-
-It will:
-- Read your intent patterns and responses
-- Create intents in Dialogflow automatically
-- Print `Intents imported successfully!` once done
-
-📅 Make sure your JSON follows this structure:
+### 📆 Step 4: Train Intents Using a JSON File
+Ensure your `intents.json` looks like this:
 
 ```json
 {
   "intents": [
     {
-      "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey"],
-      "responses": ["Hello!", "Hi there!", "Greetings!"]
+      "tag": "greet",
+      "patterns": ["Hello", "Hi there"],
+      "responses": ["Hi! How can I help you today?"]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you", "Goodbye"],
-      "responses": ["See you later!", "Bye!", "Take care!"]
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you"],
+      "responses": ["You're welcome!", "No problem!"]
     }
   ]
 }
 ```
 
+Use the helper function in `app.py` to import:
+
+```python
+import_intents_from_json("intents.json")
+```
+
+Run the script:
+```bash
+python app.py
+```
+
+This will import all your training phrases and responses to Dialogflow.
+
 ---
 
-Let us know if you'd like help with testing or deploying your Dialogflow agent!
+### 🚀 You're All Set!
 
+Now your chatbot is ready to receive and handle user queries using the trained intents.
