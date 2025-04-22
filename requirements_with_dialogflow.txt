@@ -1,0 +1,7 @@
+Flask==2.2.5
+Flask-Bcrypt==1.0.1
+Flask-Login==0.6.3
+Flask-Cors==4.0.0
+psycopg2-binary==2.9.9
+google-cloud-dialogflow==2.24.0
+google-auth==2.29.0

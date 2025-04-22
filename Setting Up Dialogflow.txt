@@ -1,0 +1,88 @@
+🧠 Setting Up Dialogflow & Importing Intents
+Step 1: Create a Dialogflow Account
+Visit Dialogflow Console
+
+Sign in with your Google account.
+
+Agree to terms and create a Google Cloud project if prompted.
+
+Step 2: Create a New Agent
+In the Dialogflow Console, click the gear icon ⚙️ (next to your agent name).
+
+If you don’t have an agent yet:
+
+Click Create new agent.
+
+Enter your Agent Name, Default Language, and Default Time Zone.
+
+Choose your Google Cloud Project (or create a new one).
+
+Click Create.
+
+Step 3: Enable Dialogflow API & Download Credentials
+Go to Google Cloud Console
+
+Select your project (created during the agent setup).
+
+In the left menu, go to APIs & Services > Library.
+
+Search for Dialogflow API, and Enable it.
+
+Go to APIs & Services > Credentials.
+
+Click Create Credentials > Service Account Key:
+
+Choose Service Account
+
+Select JSON as the key type
+
+Click Create, and a .json file will be downloaded.
+Save it in your project root directory and update the path in your code accordingly.
+
+Step 4: Set Environment Variable (Optional but Recommended)
+Set the GOOGLE_APPLICATION_CREDENTIALS environment variable to point to your key:
+
+bash
+Copy
+Edit
+export GOOGLE_APPLICATION_CREDENTIALS="path_to_your_file.json"
+Step 5: Import and Train Intents with Python Script
+If you have a file like intents.json, the app already includes a function:
+
+python
+Copy
+Edit
+import_intents_from_json('vast-ytfa-36b7391b4430.json')
+To run it, simply do this in your terminal:
+
+bash
+Copy
+Edit
+python app.py
+It will:
+
+Read your intent patterns and responses
+
+Create intents in Dialogflow automatically
+
+Print Intents imported successfully! once done
+
+✅ Make sure your JSON follows this structure:
+
+json
+Copy
+Edit
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello!", "Hi there!", "Greetings!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Goodbye"],
+      "responses": ["See you later!", "Bye!", "Take care!"]
+    }
+  ]
+}
